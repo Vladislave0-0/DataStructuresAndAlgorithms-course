@@ -23,9 +23,9 @@ void shiftArray(std::vector<int> &v, std::size_t k) {
   if (k == 0)
     return;
 
-  reverseArray(v, 0, v.size());
-  reverseArray(v, 0, k);
-  reverseArray(v, k, v.size());
+  reverseArray(v, 0, v.size() - 1);
+  reverseArray(v, 0, k - 1);
+  reverseArray(v, k, v.size() - 1);
 }
 
 int main() {
